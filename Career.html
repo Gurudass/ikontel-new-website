@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ikontel solutions pvt ltd</title>
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon.ico" />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <meta name="description" content="Qutiiz HTML Template For Business" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/custom-animate.css" />
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.min.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.pips.css" />
+    <link rel="stylesheet" href="assets/vendors/odometer/odometer.min.css" />
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="assets/vendors/qutiiz-icons/style.css">
+    <link rel="stylesheet" href="assets/vendors/qutiiz-icons-two/style.css">
+    <link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.min.css" />
+    <link rel="stylesheet" href="assets/vendors/reey-font/stylesheet.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/vendors/bxslider/jquery.bxslider.css" />
+    <link rel="stylesheet" href="assets/vendors/bootstrap-select/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="assets/vendors/vegas/vegas.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
+
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="assets/css/qutiiz.css" />
+    <link rel="stylesheet" href="assets/css/qutiiz-responsive.css" />
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        section {
+            padding: 60px 20px;
+            /* max-width: 1200px; */
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #444;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .culture-values img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .values-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .value-item {
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .value-item i {
+            font-size: 48px;
+            color: #0F56A6;
+            margin-bottom: 15px;
+        }
+
+        .value-item h3 {
+            font-size: 22px;
+            color: #0F56A6;
+            margin-bottom: 15px;
+        }
+
+        .value-item p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .benefit-item {
+            text-align: center;
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .benefit-item i {
+            font-size: 40px;
+            color: #0F56A6;
+            margin-bottom: 15px;
+        }
+
+        .benefit-item h3 {
+            margin: 10px 0;
+            font-size: 20px;
+            color: #444;
+        }
+
+        .benefit-item p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .open-positions table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .open-positions th,
+        .open-positions td {
+            border-bottom: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        .open-positions th {
+            background: #0F56A6;
+            color: white;
+        }
+
+        .open-positions tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .button {
+            display: inline-block;
+            background: #0F56A6;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .application-process .process-steps {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .application-process .step {
+            text-align: center;
+            max-width: 250px;
+        }
+
+        .application-process .step i {
+            font-size: 48px;
+            color: #0F56A6;
+            margin-bottom: 15px;
+        }
+
+        .application-process .step h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .application-process .step p {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <header class="main-header clearfix">
+            <nav class="main-menu clearfix">
+                <div class="main-menu-wrapper clearfix">
+                    <div class="main-menu-wrapper__left">
+                        <div class="main-menu-wrapper__logo">
+                            <a href="index.html"><img src="assets/images/icon/ikontelsolutions.png" alt=""></a>
+                        </div>
+                        <div class="main-menu-wrapper__left">
+                            <div class=" main-menu-wrapper__main-menu">
+                                <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                                <ul class="main-menu__list">
+                                    <li>
+                                        <a href="index.html">Home </a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="solutions.html">Solutions</a>
+                                    </li>
+                                    <li>
+                                        <a href="Digital_strategy.html">I-Quick Health</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">Resources</a>
+                                        <ul>
+                                            <li><a href="LifeatIkontel.html">Life at Ikontel</a></li>
+                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="#">casestudy</a></li>
+                                            <li><a href="#">news</a></li>
+                                            <li><a href="#">success story</a></li>
+                                        </ul>
+
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-menu-wrapper__right">
+
+                        <div class="main-menu-wrapper__call">
+                            <div class="main-menu-wrapper__call-icon">
+                                <span class="icon-chatting"></span>
+                            </div>
+                            <div class="main-menu-wrapper__call-number">
+                                <p>Call Anytime</p>
+                                <h5><a href="tel:926668880000">+91 80-4611-00-02</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="stricky-header stricked-menu main-menu">
+            <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
+        </div><!-- /.stricky-header -->
+
+        <!--Page Header Start-->
+        <section class="page-header">
+            <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg)">
+            </div>
+            <div class="page-header-border"></div>
+            <div class="page-header-border page-header-border-two"></div>
+            <div class="page-header-border page-header-border-three"></div>
+            <div class="page-header-border page-header-border-four"></div>
+            <div class="page-header-border page-header-border-five"></div>
+            <div class="page-header-border page-header-border-six"></div>
+
+            <div class="page-header-shape-1"></div>
+            <div class="page-header-shape-2"></div>
+            <div class="page-header-shape-3"></div>
+
+            <div class="container">
+                <div class="page-header__inner">
+                    <ul class="thm-breadcrumb list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active">Team</li>
+                    </ul>
+                    <h2>Careers</h2>
+                </div>
+            </div>
+        </section>
+        <!--Page Header End-->
+
+        <!--Blog Details Start-->
+        <section class="blog-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-7">
+                        <div class="blog-details__left">
+                            <div class="blog-details__content">
+                                <center>
+                                    <h3 class="blog-details__title">Shape the Future with Us</h3>
+                                </center>
+                                <p class="blog-details__text-1">At IkonTel, we're more than a company—we're a community
+                                    of innovators, dreamers, and problem-solvers. Here, your ideas and passion drive our
+                                    success, and your growth is our priority. We believe in fostering a collaborative
+                                    environment where every team member has the opportunity to shine and make a
+                                    difference. Join us, and be part of a team that values creativity, supports each
+                                    other, and celebrates every achievement. Join us, and be part of a community where
+                                    your contributions drive our collective progress and where we work together to
+                                    achieve meaningful goals.</p><br>
+                                <p>
+                                    If you'd like to join us, please send your resume to <a style="color: #007bff;" href="mailto:
+                                        info@ikontel.com">
+                                        info@ikontel.com.</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Blog Details End-->
+
+        <!-- <section class="open-positions" id="open-positions">
+            <center>
+                <h3 class="blog-details__title">Open Positions</h3>
+            </center><br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Job Title</th>
+                        <th>Location</th>
+                        <th>Department</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Software Engineer</td>
+                        <td>Remote</td>
+                        <td>Engineering</td>
+                        <td>Full-Time</td>
+                    </tr>
+                    <tr>
+                        <td>Currently, no positions available.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <center>
+                <a href="mailto: info@ikontel.com" class="button"
+                    style="display: inline-block; background: #007bff; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-right: 10px; transition: background-color 0.3s ease; cursor: pointer;">Apply
+                    Now</a>
+            </center>
+        </section> -->
+
+        <section class="culture-values">
+            <center>
+                <h3 class="blog-details__title">Why Work With Us?</h3>
+            </center>
+            <div class="values-container">
+                <div class="value-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Inclusive Environment</h3>
+                    <p class="blog-details__text-1">We believe in diversity and foster a culture where everyone is
+                        welcome.</p>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Growth Opportunities</h3>
+                    <p class="blog-details__text-1">We invest in our employees' development through continuous learning.
+                    </p>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Work-Life Balance</h3>
+                    <p class="blog-details__text-1">We prioritize a healthy work-life balance with flexible working
+                        hours and remote options.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits-perks">
+            <center>
+                <h3 class="blog-details__title">Benefits and Perks</h3>
+            </center><br>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Health and Wellness</h3>
+                    <p class="blog-details__text-1">Comprehensive health insurance plans.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-plane"></i>
+                    <h3>Vacation Time</h3>
+                    <p class="blog-details__text-1">Generous paid time off and holiday schedules.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Professional Growth</h3>
+                    <p class="blog-details__text-1">Access to training programs and certifications.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-users-cog"></i>
+                    <h3>Team Events</h3>
+                    <p class="blog-details__text-1">Regular team-building activities and outings.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="application-process">
+            <center>
+                <h3 class="blog-details__title">Our Application Process</h3>
+            </center><br>
+            <div class="process-steps">
+                <div class="step">
+                    <i class="fas fa-file-upload"></i>
+                    <h3>Submit Your Resume</h3>
+                    <p>Upload your resume and cover letter.</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-search"></i>
+                    <h3>Initial Screening</h3>
+                    <p>Our team will review your application.</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-comments"></i>
+                    <h3>Interviews</h3>
+                    <p>Meet with our team for one or more interviews.</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Offer</h3>
+                    <p>If we’re a match, we’ll extend an offer.</p>
+                </div>
+            </div><br>
+        </section>
+
+
+        <!--Start Cta One-->
+        <section class="cta-one cta-one--two">
+            <div class="cta-one-shape-1"></div>
+            <div class="cta-one-shape-2"></div>
+            <div class="cta-one-shape-3"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="cta-one__inner wow fadeInUp" data-wow-delay="100ms" data-wow-duration="2500ms">
+                            <div class="cta-one__left">
+                                <h2 class="cta-one__title" style="text-transform: none;">Join us on our mission –
+                                    Contact us to see <br>how we can
+                                    help you grow!</h2>
+                            </div>
+                            <div class="cta-one__right">
+                                <a href="contact.html" class="cta-one__btn thm-btn">let’s get started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Cta One-->
+
+
+        <!--Site Footer Start-->
+        <footer class="site-footer">
+            <div class="site-footer__top">
+                <div class="container">
+                    <div class="site-footer__top-inner">
+                        <div class="site-footer__top-left">
+                            <div class="site-footer__top-logo">
+                                <a href="index.html"><img src="assets/images/icon/ikontelsolutions.png" alt=""></a>
+                            </div>
+                            <div class="site-footer__top-title-box">
+                                <h3 class="site-footer__top-title"></h3>
+                            </div>
+                        </div>
+                        <div class="site-footer__top-right">
+                            <div class="site-footer__top-right-social">
+                                <a href="https://twitter.com/IkontelLtd"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/ikontel"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.instagram.com/ikontelsolutions/"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/ikontelsolutions"><i
+                                        class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer__middle">
+                <div class="site-footer-shape"
+                    style="background-image: url(assets/images/shapes/site-footer-shape.png)">
+                </div>
+                <div class="container">
+                    <div class="site-footer__middle-inner">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                                <div class="footer-widget__column footer-widget__about">
+                                    <h3 class="footer-widget__title">Get in touch</h3>
+                                    <ul class="footer-widget__about-contact list-unstyled">
+                                        <li>
+                                            <div class="icon">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+                                            <div class="text">
+                                                <p>Brigade Opus, 70/401, Kodigehalli Main Rd, Hebbal, Bengaluru,
+                                                    Karnataka
+                                                    560092</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <i class="fas fa-phone-square-alt"></i>
+                                            </div>
+                                            <div class="text">
+                                                <a href="tel:+91 80-4611-00-02">+91 80-4653-50-60</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <i class="fas fa-envelope"></i>
+                                            </div>
+                                            <div class="text">
+                                                <a href="mailto:info@ikontel.com">info@ikontel.com</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3     col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                                <div class="footer-widget__column footer-widget__links clearfix">
+                                    <h3 class="footer-widget__title">Solutions</h3>
+                                    <ul class="footer-widget__links-list list-unstyled clearfix">
+                                        <li><a href="solutions.html">VOICE BOT</a></li>
+                                        <li><a href="solutions.html">SPEECH SERVICE</a></li>
+                                        <li><a href="solutions.html">LONGCODE SMS</a></li>
+                                        <li><a href="solutions.html">SMS GATEWAY</a></li>
+                                        <li><a href="solutions.html">TOLL FREE</a></li>
+                                        <li><a href="solutions.html">MISSCALL</a></li>
+                                        <li><a href="solutions.html">IVRS</a></li>
+                                        <li><a href="solutions.html">CLICK 2 CALL</a></li>
+                                        <li><a href="solutions.html">ROBO CALL</a></li>
+                                        <li><a href="solutions.html">CLOUD TELEPHONY</a></li>
+                                        <li><a href="solutions.html">AUDIO CONFERENCE
+                                                BRIDGE</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                                <div class="footer-widget__column footer-widget__explore clearfix">
+                                    <h3 class="footer-widget__title">COMPANY</h3>
+                                    <ul class="footer-widget__explore-list list-unstyled clearfix">
+                                        <li><a href="Digital_strategy.html">FOR SMALL BUSINESS</a></li>
+                                        <li><a href="index.html">FOR ENTERPRISE</a></li>
+                                        <li><a href="contact.html">PARTNER WITH US</a></li>
+                                        <li><a href="Career.html">CAREER</a></li>
+                                        <li><a href="about.html">ABOUT US</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                                <div class="footer-widget__column footer-widget__explore clearfix">
+                                    <h3 class="footer-widget__title">RESOURCES</h3>
+                                    <ul class="footer-widget__explore-list list-unstyled clearfix">
+                                        <li><a href="LifeatIkontel.html">LIFE @ IKONTEL</a></li>
+                                        <li><a href="#">BLOG</a></li>
+                                        <li><a href="#">CASESTUDY</a></li>
+                                        <li><a href="#">NEWS</a></li>
+                                        <li><a href="#">SUCCESS STORY</a></li>
+                                        <li><a href="Voice_Bot.html#f&q">F&Q</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="site-footer__bottom">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="site-footer__bottom-inner">
+                                    <div class="site-footer__bottom-left">
+                                        <p class="site-footer__bottom-text">© Copyrights, 2024 <a href="#">IKontel</a>
+                                            All rights reserved
+                                        </p>
+                                    </div>
+                                    <div class="site-footer__bottom-right">
+                                        <ul class="list-unstyled site-footer__bottom-menu">
+                                            <li><a href="Terms&conditions.html">Terms & Conditions</a></li>
+                                            <li><a href="privacy.html">Privacy Policy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Site Footer End-->
+
+
+    </div><!-- /.page-wrapper -->
+
+
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__wrapper">
+            <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+            <!-- /.mobile-nav__overlay -->
+            <div class="mobile-nav__content">
+                <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+                <div class="logo-box">
+                    <a href="index.html" aria-label="logo image"><img src="assets/images/icon/ikontelsolutions.png"
+                            width="155" alt="" /></a>
+                </div>
+                <!-- /.logo-box -->
+                <div class="mobile-nav__container"></div>
+                <!-- /.mobile-nav__container -->
+
+                <ul class="mobile-nav__contact list-unstyled">
+                    <li>
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:info@ikontel.com">info@ikontel.com</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-phone-alt"></i>
+                        <a href="tel:+91 80-4611-00-02">+91 80-4653-50-60</a>
+                    </li>
+                </ul><!-- /.mobile-nav__contact -->
+                <div class="mobile-nav__top">
+                    <div class="mobile-nav__social">
+                        <a href="https://twitter.com/IkontelLtd"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/ikontel"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/ikontelsolutions/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/ikontelsolutions"><i class="fab fa-linkedin"></i></a>
+                    </div><!-- /.mobile-nav__social -->
+                </div><!-- /.mobile-nav__top -->
+
+
+
+            </div>
+            <!-- /.mobile-nav__content -->
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form action="#">
+                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="thm-btn">
+                    <i class="icon-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
+    <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+    <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script src="assets/vendors/nouislider/nouislider.min.js"></script>
+    <script src="assets/vendors/odometer/odometer.min.js"></script>
+    <script src="assets/vendors/swiper/swiper.min.js"></script>
+    <script src="assets/vendors/tiny-slider/tiny-slider.min.js"></script>
+    <script src="assets/vendors/wnumb/wNumb.min.js"></script>
+    <script src="assets/vendors/wow/wow.js"></script>
+    <script src="assets/vendors/isotope/isotope.js"></script>
+    <script src="assets/vendors/countdown/countdown.min.js"></script>
+    <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendors/bxslider/jquery.bxslider.min.js"></script>
+    <script src="assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="assets/vendors/vegas/vegas.min.js"></script>
+    <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
+    <script src="assets/vendors/timepicker/timePicker.js"></script>
+    <script src="https://kit.fontawesome.com/0b170b98a9.js" crossorigin="anonymous"></script>
+    <script>
+        // Get elements
+        var openPopup = document.getElementById("openPopup");
+        var popup = document.getElementById("popup");
+        var closePopup = document.getElementById("closePopup");
+
+        // Show popup
+        openPopup.onclick = function () {
+            popup.style.display = "block";
+            document.body.style.overflow = "hidden"; // Disable scroll on background
+        };
+
+        // Hide popup
+        closePopup.onclick = function () {
+            popup.style.display = "none";
+            document.body.style.overflow = "auto"; // Enable scroll on background
+        };
+
+        // Hide popup if clicked outside of it
+        window.onclick = function (event) {
+            if (event.target === popup) {
+                popup.style.display = "none";
+                document.body.style.overflow = "auto"; // Enable scroll on background
+            }
+        };
+    </script>
+
+
+
+
+
+
+    <!-- template js -->
+    <script src="assets/js/qutiiz.js"></script>
+</body>
+
+</html>
